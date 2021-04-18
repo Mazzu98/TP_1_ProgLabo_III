@@ -15,6 +15,8 @@ $tarde = '';
 $noche = '';
 $masculino = '';
 $femenino = '';
+$titulo = 'Alta de Empleado';
+$boton = 'Enviar';
 
 if ($dni != '') {
     $fabrica = new Fabrica('RI', 7);
@@ -49,6 +51,8 @@ if ($dni != '') {
                     break;
             }
             break;
+            $titulo = 'Modificar Empleado';
+            $boton = 'Modificar';
         }
     }
     echo "
@@ -62,7 +66,7 @@ if ($dni != '') {
                     <title>Modificar Empleado</title>
                 </head>
                 <body>
-                    <h2>Modificar Empleados</h2>
+                    <h2>$titulo</h2>
                     <form action='./..\backend\administracion.php' enctype='multipart/form-data' method='POST'>
                         <table align='center'>
                             <!-- Datos Personales -->
@@ -172,7 +176,7 @@ if ($dni != '') {
                             </tr>
                             <tr>
                                 <td colspan='2' align='right'>
-                                    <input id='submitButton' type='submit' value='Modificar' onclick='enviar(event)'>
+                                    <input id='submitButton' type='submit' value='$boton' onclick='enviar(event)'>
                                 </td>
                             </tr>
                         </table>
