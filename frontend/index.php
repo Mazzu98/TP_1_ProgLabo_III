@@ -1,20 +1,5 @@
 <?php
-
-include_once './../backend/fabrica.php';
 include_once './../backend/validarSesion.php';
-
-$fabrica = new Fabrica('RI', 7);
-$fabrica->TraerDeArchivo('./../backend/archivos/empleados.txt');
-
-$apellidoNombre = '';
-foreach($fabrica->GetEmpleados() as $empleado){
-
-    if($empleado->GetDni() == $_SESSION['DNIEmpleado']){
-        $apellidoNombre = $empleado->GetApellido() . ' ' . $empleado->GetNombre();
-        break;
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +19,7 @@ foreach($fabrica->GetEmpleados() as $empleado){
             <td colspan="3">
                 <div id="nombre" style="padding: 0 20px">
                 <h2>
-                    <?php echo $apellidoNombre; ?>
+                    Mazzucchelli Juan
                 </h2>
             </div>
             </td>
