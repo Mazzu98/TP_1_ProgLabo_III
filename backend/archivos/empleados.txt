@@ -1,5 +1,4 @@
-Jose - Nalo - 1000003 - M - 103 - 12500 - M - ./fotos/1000003-Nalo.png
-Leila - Flores - 1000001 - F - 110 - 11000 - M - ./fotos/1000001-Flores.png
-Juan - Mazzu - 1000002 - M - 102 - 15000 - T - ./fotos/1000002-Mazzu.png
-Leila - Pascal - 1000004 - F - 104 - 12000 - T - ./fotos/1000004-Pascal.jpg
+Jose - Pascal - 1000009 - M - 109 - 10500 - N - ./fotos/1000009-Pascal.png
+rfefwefewf - Nalo - 1000000 - F - 100 - 10500 - M - ./fotos/1000000-Nalo.png
 Leila - Nalo - 1000011 - F - 111 - 12000 - T - ./fotos/1000011-Nalo.png
+Leila - Flores - 1000004 - F - 104 - 12000 - T - ./fotos/1000004-Flores.png

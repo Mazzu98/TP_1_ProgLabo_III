@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Listado de Empleados</h2>
-    <form id='form' action="./../frontend/index.php" method="POST">
+    <form>
     <table align="center">
         <tr>
             <td>
@@ -29,7 +29,7 @@
         
         foreach($empleados as $empleado){
             $legajo = $empleado->GetLegajo();
-            $path = $empleado->GetPathFoto();
+            $path ="./../backend/" . $empleado->GetPathFoto();
             $dni = $empleado->GetDni();
             echo "<tr>";
             echo "<td>";
@@ -39,7 +39,7 @@
             echo "<img src='$path' width='90px' height='90px'> ";
             echo "</td>";
             echo "<td>";
-            echo "<a href='./eliminar.php?legajo=$legajo'>Eliminar</a>";
+            echo "<a onclick='eliminarEmpleado($legajo)' style='cursor: pointer; color: purple; text-decoration: underline' >Eliminar</a>";
             echo "</td>";
             echo "<td>";
             echo "<input type='button' value='Modificar' onclick='AdministrarModificar($dni)'>";
@@ -54,9 +54,6 @@
         <input type='hidden' id='dni' name='dni'>
     </table>
     </form>
-    <a href="./../frontend/index.php">Alta de Empleados</a>
     <!-- TODO: cambiar referencia -->
-    <br>
-    <a href="cerrarSesion.php">Log out</a>
 </body>
 </html>

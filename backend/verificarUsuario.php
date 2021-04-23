@@ -12,7 +12,7 @@
             if($lineaArray[1] == $apellido && $lineaArray[2] == $dni){
                 session_start();
                 $_SESSION['DNIEmpleado'] = $dni;
-                header('Location: ./mostrar.php');
+                header('Location: ./../frontend/index.php');
             }
         }
     }
