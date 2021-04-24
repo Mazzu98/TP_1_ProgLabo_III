@@ -137,6 +137,7 @@ function enviar() {
             }
         };
     }
+    cargarForm();
 }
 function AdministrarValidaciones() {
     var valida = true;
