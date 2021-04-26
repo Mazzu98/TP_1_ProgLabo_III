@@ -36,8 +36,8 @@ function enviar(): void {
                 cargarMostrar();
             }
         }
+        cargarForm();
     }
-    cargarForm();
 }
 
   function AdministrarValidaciones() : boolean{
