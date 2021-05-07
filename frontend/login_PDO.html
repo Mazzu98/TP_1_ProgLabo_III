@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="javascript/funciones_PDO.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form action="./..\backend_PDO\verificarUsuario.php" method="POST">
+      <table align="center">
+        <!-- Datos Personales -->
+        <tr>
+          <td colspan="2" width="300px">
+            <h4>Ingreso de credenciales</h4>
+            <br />
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td>DNI:</td>
+          <td>
+            <input
+              id="txtDni"
+              name="txtDni"
+              type="number"
+              min="1000000"
+              max="55000000"
+            />
+            <span id="errorDni" style="display: none; color: red">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Apellido:</td>
+          <td>
+            <input id="txtApellido" name="txtApellido" type="text" />
+            <span id="errorApellido" style="display: none; color: red">*</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br />
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right">
+            <input id="resetButton" type="reset" value="Limpiar" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right">
+            <input
+              id="submitButton"
+              type="submit"
+              onclick="enviarLogin(event)"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
