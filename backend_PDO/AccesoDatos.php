@@ -8,10 +8,10 @@ class AccesoDatos
     {
         try {
  
-            $usuario='root';
-            $clave='';
+            $usuario='id16773233_mazzu';
+            $clave='XOSzP3yLv5s]vCMV';
 
-            $this->objetoPDO = new PDO('mysql:host=localhost;dbname=tp_prog;charset=utf8', $usuario, $clave);
+            $this->objetoPDO = new PDO('mysql:host=localhost;dbname=id16773233_tp_prog;charset=utf8', $usuario, $clave);
  
         } catch (PDOException $e) {
  

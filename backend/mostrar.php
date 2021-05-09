@@ -21,7 +21,6 @@
         </tr>
         <?php
         include_once './fabrica.php';
-        include_once './validarSesion.php';
 
         $fabrica = new Fabrica('RI',7);
         $fabrica->TraerDeArchivo("./archivos/empleados.txt");
