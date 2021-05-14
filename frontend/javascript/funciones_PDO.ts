@@ -141,4 +141,3 @@ function enviar(): void {
             let ajax = new Ajax();
             ajax.Get("./../backend_PDO/eliminar.php",cargarMostrar,'legajo='+legajo);
       }
-      

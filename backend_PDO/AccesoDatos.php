@@ -11,8 +11,13 @@ class AccesoDatos
             $usuario='id16773233_mazzu';
             $clave='XOSzP3yLv5s]vCMV';
 
-            $this->objetoPDO = new PDO('mysql:host=localhost;dbname=id16773233_tp_prog;charset=utf8', $usuario, $clave);
+            $this->objetoPDO = new PDO('mysql:host=localhost;dbname=id16773233_tp_prog;charset=utf8', $usuario, $clave); 
  
+            /* $usuario='root';
+            $clave='';
+
+            $this->objetoPDO = new PDO('mysql:host=localhost;dbname=tp_prog;charset=utf8', $usuario, $clave); */
+
         } catch (PDOException $e) {
  
             print "Error!!!<br/>" . $e->getMessage();

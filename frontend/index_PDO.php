@@ -40,6 +40,8 @@ include_once './../backend_PDO/validarSesion.php';
                 <a href="./../backend_PDO/cerrarSesion.php">Log out</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="cargarForm()" style="color: purple; cursor:pointer; text-decoration: underline">Alta de empleados</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./../backend_PDO/mdf.php" target="_BLANK" style="color: purple; cursor:pointer; text-decoration: underline">Generar pdf</a>
                 </div>
             </td>
         </tr>

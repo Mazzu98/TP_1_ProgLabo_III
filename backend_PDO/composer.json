@@ -1,0 +1,7 @@
+{
+    "name": "vendor/proyectorueba",
+    "description" : "descripcion asd;ljk as;dlksd;asd'ef welkfh ",
+    "require":{
+        "mpdf/mpdf":"~8.0.0"
+    }
+}
